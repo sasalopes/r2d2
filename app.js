@@ -1,10 +1,8 @@
 const express = require("express");
 const app = express();
+const routes = require('./starwars/movies/routes')
 
-app.post("", (req, res) => {
-    res.json("recebido!")
-
-});
+app.use('/', routes);
 
 app.listen(3000, () => {
     console.log("Servidor rodando em http://localhost:3000/");
