@@ -82,5 +82,19 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "d8bafc3f-4448-44a5-8eb9-9177caed2aca",
+    "colId": "bfec3d76-9dca-4443-aff1-e5e5270733cd",
+    "containerId": "",
+    "name": "trilogia",
+    "url": "http://localhost:5000/starwars",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-04-26T20:20:02.210Z",
+    "modified": "2023-04-26T20:33:54.839Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]
