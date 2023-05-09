@@ -1,10 +1,13 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const app = express();
-const routes = require('./starwars/movies/routes')
+const express = require('express')
+const bodyParser = require('body-parser');
+const movieRoutesTopic = require('./topic/movies/routes')
+var cors = require('cors')
+const port = process.env.PORT || 3001;
 
-app.use(bodyParser.json());
-app.use('/', routes);
+const app = express()
+app.options('*', cors())
+app.use(bodyParser.json())
+app.use(movieRoutesTopic)
 
 
 

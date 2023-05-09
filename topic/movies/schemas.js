@@ -21,12 +21,12 @@ const newFilmSchema = checkSchema({
       errorMessage: 'O ano deve estar entre 1900 e 2100',
     },
   },
-  director: {
+  trilogy: {
     isString: {
-      errorMessage: 'O diretor deve ser uma string',
+      errorMessage: 'A trilogia deve ser uma string',
     },
     notEmpty: {
-      errorMessage: 'O diretor é obrigatório',
+      errorMessage: 'A trilogia é obrigatória',
     },
   },
 });
